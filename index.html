@@ -952,32 +952,32 @@ var CLIPS = [
   { src:'assets/videos/video-06.mp4', name:'Meu Projeto 6',  thumb:IMAGES.mountain }
 ];
 var RECENTS_VIDEOS = [
-{ thumb:IMAGES.mountain, duration:'0:08', clip:CLIPS[5] },
-{ thumb:IMAGES.cocktail, duration:'0:10', clip:CLIPS[0] },
-{ thumb:IMAGES.city, duration:'0:10', clip:CLIPS[6] },
-{ thumb:IMAGES.beach, duration:'0:10', clip:CLIPS[6] },
-{ thumb:IMAGES.ocean, duration:'0:10', clip:CLIPS[7] },
-{ thumb:IMAGES.night, duration:'0:10', clip:CLIPS[4] },
-{ thumb:IMAGES.mountain, duration:'0:12', clip:CLIPS[5] },
-{ thumb:IMAGES.ocean, duration:'0:15', clip:CLIPS[7] },
-{ thumb:IMAGES.cocktail, duration:'0:09', clip:CLIPS[0] },
-{ thumb:IMAGES.phonebox, duration:'0:11', clip:CLIPS[1] },
-{ thumb:IMAGES.iphone, duration:'0:14', clip:CLIPS[2] },
-{ thumb:IMAGES.macbook, duration:'0:10', clip:CLIPS[3] },
-{ thumb:IMAGES.neon, duration:'0:08', clip:CLIPS[4] },
-{ thumb:IMAGES.beach, duration:'0:13', clip:CLIPS[6] },
-{ thumb:IMAGES.city, duration:'0:10', clip:CLIPS[6] },
-{ thumb:IMAGES.night, duration:'0:12', clip:CLIPS[4] },
-{ thumb:IMAGES.mountain, duration:'0:07', clip:CLIPS[5] },
-{ thumb:IMAGES.ocean, duration:'0:11', clip:CLIPS[7] }
+  { thumb:IMAGES.mountain, duration:'0:08', clip:CLIPS[5] },
+  { thumb:IMAGES.cocktail, duration:'0:10', clip:CLIPS[0] },
+  { thumb:IMAGES.city, duration:'0:10', clip:CLIPS[4] },   // Corrigido de 6 para 4
+  { thumb:IMAGES.beach, duration:'0:10', clip:CLIPS[5] },  // Corrigido de 6 para 5
+  { thumb:IMAGES.ocean, duration:'0:10', clip:CLIPS[3] },  // Corrigido de 7 para 3
+  { thumb:IMAGES.night, duration:'0:10', clip:CLIPS[4] },
+  { thumb:IMAGES.mountain, duration:'0:12', clip:CLIPS[5] },
+  { thumb:IMAGES.ocean, duration:'0:15', clip:CLIPS[3] },  // Corrigido de 7 para 3
+  { thumb:IMAGES.cocktail, duration:'0:09', clip:CLIPS[0] },
+  { thumb:IMAGES.phonebox, duration:'0:11', clip:CLIPS[1] },
+  { thumb:IMAGES.iphone, duration:'0:14', clip:CLIPS[2] },
+  { thumb:IMAGES.macbook, duration:'0:10', clip:CLIPS[3] },
+  { thumb:IMAGES.neon, duration:'0:08', clip:CLIPS[4] },
+  { thumb:IMAGES.beach, duration:'0:13', clip:CLIPS[5] },  // Corrigido de 6 para 5
+  { thumb:IMAGES.city, duration:'0:10', clip:CLIPS[4] },   // Corrigido de 6 para 4
+  { thumb:IMAGES.night, duration:'0:12', clip:CLIPS[4] },
+  { thumb:IMAGES.mountain, duration:'0:07', clip:CLIPS[5] },
+  { thumb:IMAGES.ocean, duration:'0:11', clip:CLIPS[3] }   // Corrigido de 7 para 3
 ];
 var ALBUMS = [
-{ name:'Recents', count:'18', videos:RECENTS_VIDEOS, clip:CLIPS[0] },
-{ name:'CapCut', count:'31', videos:[], clip:CLIPS[1] },
-{ name:'Favorites', count:'237', videos:[], clip:CLIPS[2], heart:true },
-{ name:'Reels', count:'3', videos:[], clip:CLIPS[3] }
+  { name:'Recents', count:'18', videos:RECENTS_VIDEOS, clip:CLIPS[0] },
+  { name:'CapCut', count:'31', videos:[], clip:CLIPS[1] },
+  { name:'Favorites', count:'237', videos:[], clip:CLIPS[2], heart:true },
+  { name:'Reels', count:'3', videos:[], clip:CLIPS[3] }
 ];
-var SHARED = [CLIPS[4], CLIPS[5], CLIPS[6], CLIPS[7]];
+var SHARED = [CLIPS[2], CLIPS[3], CLIPS[4], CLIPS[5]]; 
 /* ---------- Carousel da câmera (5s por vídeo) ---------- */
 var cameraScreen=$('camera-screen');
 var layer = $('cam-video-layer');
